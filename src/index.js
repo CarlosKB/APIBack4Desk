@@ -426,14 +426,14 @@ app.post("/enviar-token", (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "group4desk@outlook.com",
-      pass: "4deskparadesk",
+      user: "fateccarlos@gmail.com",
+      pass: "24g11r84",
     },
   });
 
   transporter.sendMail({
     // Envia o Email
-    from: "group4desk@outlook.com",
+    from: "fateccarlos@gmail.com",
     to: email, // Email destinatário
     subject: "Visiona - token para alteração de senha",
     html: `<h3>Requisição de token para alteração de senha no sistema da Visiona.</h3></br> <h4>Seu token é: <b>${token}</b></h4>`,
