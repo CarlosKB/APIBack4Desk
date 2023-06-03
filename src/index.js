@@ -426,14 +426,14 @@ app.post("/enviar-token", (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "fateccarlos@gmail.com",
-      pass: "24g11r84",
+      user: "carlos4desk@outlook.com",
+      pass: "4desk123",
     },
   });
 
   transporter.sendMail({
     // Envia o Email
-    from: "fateccarlos@gmail.com",
+    from: "carlos4desk@outlook.com",
     to: email, // Email destinatário
     subject: "Visiona - token para alteração de senha",
     html: `<h3>Requisição de token para alteração de senha no sistema da Visiona.</h3></br> <h4>Seu token é: <b>${token}</b></h4>`,
@@ -460,14 +460,14 @@ app.post("/validaEmail", async (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: 'fateccarlos@gmail.com',
-        pass: '24g11r84 ',
+        user: 'carlos4desk@outlook.com',
+        pass: '4desk123',
       },
     });
 
     transporter.sendMail({
       // Envia o Email
-      from: "fateccarlos@gmail.com",
+      from: "carlos4desk@outlook.com",
       to: email, // Email destinatário
       subject: "Visiona - token para validação de e-mail",
       html: `<h3>Token para validação de e-mail no sistema da Visiona.</h3></br> <h4>Seu token é: <b>${token}</b></h4>`,
