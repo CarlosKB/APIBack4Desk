@@ -14,7 +14,7 @@ const cliente = new Pool({
   connectionString: 'postgres://jgkjdnpq:LSQ78hphQqJtTT5At_aS9Z-T3Dps25iG@silly.db.elephantsql.com/jgkjdnpq'
 
 });
-
+//teste
 function buscaUsuario(login, senha, res) {
   cliente.query(
     "SELECT * FROM usuarios WHERE login = '" + login + "';",
